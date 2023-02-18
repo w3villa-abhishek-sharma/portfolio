@@ -5,11 +5,6 @@
     scroll-behavior: smooth;
 }
 
-@media screen and (min-width:900px) {
-    body{
-        overflow: scroll !important;
-    }
-}
 /*  
 ++++++++++++++ Variables +++++++++
 */
@@ -22,6 +17,27 @@
     --text-color-primary: #fff;
     --text-color-secondry: grey;
 }
+
+/*  
+++++++++++++ Body +++++++++++
+*/
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+@media screen and (min-width:900px) {
+    body{
+        overflow: scroll !important;
+    }
+}
+
 
 
 /*  
