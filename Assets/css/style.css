@@ -5,6 +5,11 @@
     scroll-behavior: smooth;
 }
 
+@media screen and (min-width:900px) {
+    body{
+        overflow: scroll !important;
+    }
+}
 /*  
 ++++++++++++++ Variables +++++++++
 */
@@ -17,6 +22,43 @@
     --text-color-primary: #fff;
     --text-color-secondry: grey;
 }
+
+
+/*  
+++++++++++++ Comman Class +++++++++++
+*/
+.main-container{
+    width: 82vw;
+    margin-left: auto;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+#menu-icon{
+    display: none;
+}
+@media screen and (max-width:1400px){
+    .main-container{
+        width: 70vw;
+        margin-left: auto;
+    }
+}
+@media screen and (max-width:1200px){
+    .main-container{
+        width: 100vw;
+        margin-left: auto;
+    }
+    .container{
+        width: 80%;
+        margin: auto;
+    }
+    #menu-icon{
+        display: block;
+    }
+}
+
+
 
 
 /* 
@@ -195,40 +237,6 @@
     right: 40px;
     font-size: 1.5rem;
 }
-/*  
-++++++++++++ Comman Class +++++++++++
-*/
-.main-container{
-    width: 82vw;
-    margin-left: auto;
-}
-.container{
-    width: 90%;
-    margin: auto;
-}
-#menu-icon{
-    display: none;
-}
-@media screen and (max-width:1400px){
-    .main-container{
-        width: 70vw;
-        margin-left: auto;
-    }
-}
-@media screen and (max-width:1200px){
-    .main-container{
-        width: 100vw;
-        margin-left: auto;
-    }
-    .container{
-        width: 80%;
-        margin: auto;
-    }
-    #menu-icon{
-        display: block;
-    }
-}
-
 
 
 /*  
@@ -247,6 +255,22 @@
     .main{
         background: linear-gradient(#122743c2,#44444494) ,url('../images/WhatsApp\ Image\ 2023-02-15\ at\ 9.44.28\ AM.jpeg') center top no-repeat fixed ;
         font-size: 2rem;
+    }
+}
+@media screen and (max-width:550px) {
+    .main{
+        background: linear-gradient(#122743c2,#44444494) ,url('../images/WhatsApp\ Image\ 2023-02-18\ at\ 5.30.55\ PM.jpeg') no-repeat fixed ;
+        background-size: contain;
+        font-size: 1.5rem;
+        height: 50vh;
+    }
+}
+@media screen and (max-width:450px) {
+    .main{
+        background: linear-gradient(#122743c2,#44444494) ,url('../images/WhatsApp\ Image\ 2023-02-18\ at\ 5.30.55\ PM.jpeg') 70% center no-repeat fixed ;
+        background-size: cover;
+        font-size: 1.5rem;
+        height: 65vh;
     }
 }
 

@@ -70,21 +70,21 @@
           </div>
         </div>
         <ul class="navigations">
-          <li>
+          <li onclick="handleMenu()">
             <a href="#main"><i class="fa-regular fa-house"></i> Home</a>
           </li>
-          <li>
+          <li onclick="handleMenu()">
             <a href="#about"><i class="fa-regular fa-user"></i> About</a>
           </li>
-          <li>
+          <li onclick="handleMenu()">
             <a href="#skills"
               ><i class="fa-regular fa-face-smile-upside-down"></i> Skills</a
             >
           </li>
-          <li>
+          <li onclick="handleMenu()">
             <a href="#resume"><i class="fa-regular fa-file"></i> Resume</a>
           </li>
-          <li>
+          <li onclick="handleMenu()">
             <a href="#"
               ><i class="fa-regular fa-toilets-portable"></i> Portfolio</a
             >
@@ -105,7 +105,7 @@
           <i id="menu-icon" onclick="handleMenu()" class="menu-icon fa-solid fa-bars"></i>
           <div class="hero">
             <h1>Abhishek Sharma</h1>
-            <p>I'm a MERN Stack Developer.</p>
+            <p>MERN Stack Developer.</p>
           </div>
         </div>
       </div>
@@ -160,8 +160,8 @@
                   And also work on freelancing project with client requirements.
                   Client Website is -
                   <span
-                    ><a href="https://www.test.bigboychoice.com"
-                      >https://www.test.bigboychoice.com</a
+                    ><a href="https://test.bigboychoice.com"
+                      >https://test.bigboychoice.com</a
                     ></span
                   >
                 </p>
@@ -281,9 +281,9 @@
               </div>
               </div>
               <div class="seprate-section">
-                <h3>Web Developer Developer</h3>
+                <h3>Web Developer</h3>
                 <span>Aug/2022 - Dec/2022</span>
-                  <p class="color-black"><i class="fa-regular fa-building"></i> BigBoyChoice</p>
+                  <p class="color-black"><i class="fa-regular fa-building"></i> Freelancing - BigBoyChoice</p>
                   <p>This is freelancing project. in this project i develop the frontend part of the website.basically this is a plateform for buy the vip phone numbers. though that plateform user can easly buy the vip numbers.</p>
               </div>
               <div class="seprate-section">
@@ -306,13 +306,16 @@
           document.getElementById("navigation").classList.add("hide");
           document.getElementById("menu-icon").classList.add("fa-bars");
           document.getElementById("menu-icon").classList.remove("fa-xmark");
+          document.getElementsByTagName('body')[0].style.overflow = "scroll";
         }else{
           document.getElementById("navigation").classList.add("active");
           document.getElementById("navigation").classList.remove("hide");
           document.getElementById("menu-icon").classList.remove("fa-bars");
           document.getElementById("menu-icon").classList.add("fa-xmark");
+          document.getElementsByTagName('body')[0].style.overflow = "hidden";
         }
       }
+
     </script>
   </body>
 </html>
