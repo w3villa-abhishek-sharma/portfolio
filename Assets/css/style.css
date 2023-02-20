@@ -80,6 +80,8 @@ body {
     }
 }
 
+
+
 /*  
 ++++++++++++ Social Media Link Class +++++++++++
 */
@@ -94,11 +96,9 @@ body {
 }
 
 
-
 /* 
 ++++++++++++ Side Nav Bar ++++++++++
 */
-
 .left-section{
     position: fixed;
     top: 0;
