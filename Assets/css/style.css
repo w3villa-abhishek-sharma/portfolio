@@ -54,6 +54,12 @@ body {
 #menu-icon{
     display: none;
 }
+.mt-20{
+    margin-top: 20px;
+}
+.font-1{
+    font-size: 1.7rem;
+}
 @media screen and (max-width:1400px){
     .main-container{
         width: 70vw;
@@ -74,6 +80,18 @@ body {
     }
 }
 
+/*  
+++++++++++++ Social Media Link Class +++++++++++
+*/
+.social-links i{
+    padding: 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: var(--background-color-secondry);
+}
+.social-links a{
+    color: #fff;
+}
 
 
 
@@ -104,12 +122,7 @@ body {
 .left-section .content .header .name{
     margin: 30px 0 20px 0;
 }
-.left-section .content .header .social-links i{
-    padding: 15px;
-    margin: 0 5px;
-    border-radius: 50%;
-    background-color: var(--background-color-secondry);
-}
+
 .left-section .content .logo{
     width: 100px;
     height: 100px;
@@ -178,11 +191,11 @@ body {
     }
     .left-section.active{
         left: 0;
-        animation: leftRight 1s;
+        animation: leftRight .3s;
     }
     .left-section.hide{
         left: -50%;
-        animation: rightLeft 1s;
+        animation: rightLeft .3s;
     }
     @keyframes leftRight {
         0% { left: -50%; }
@@ -202,11 +215,11 @@ body {
     }
     .left-section.active{
         left: 0;
-        animation: leftRight 1s;
+        animation: leftRight .3s;
     }
     .left-section.hide{
         left: -70%;
-        animation: rightLeft 1s;
+        animation: rightLeft .3s;
     }
     @keyframes leftRight {
         0% { left: -70%; }
@@ -226,11 +239,11 @@ body {
     }
     .left-section.active{
         left: 0;
-        animation: leftRight 1s;
+        animation: leftRight .3s;
     }
     .left-section.hide{
         left: -100%;
-        animation: rightLeft 1s;
+        animation: rightLeft .3s;
     }
     @keyframes leftRight {
         0% { left: -100%; }
@@ -335,9 +348,23 @@ body {
 .about .about-data .bulet-points ul li{
     margin: 10px 0;
 }
+.about .about-data .bulet-points ul li a{
+    color: #000;
+    text-decoration: none;
+}
+.about .about-data .bulet-points ul span:first-child{
+    font-weight: 600;
+}
+.berif-intro{
+    font-size: 1.1rem;
+}
 @media screen and (max-width:1170px) {
     .about .content .about-data {
         width: 70%;
+    }
+    .about .about-data .bulet-points {
+        display: block;
+        margin: 40px 0;
     }
 }
 @media screen and (max-width:870px) {
@@ -352,8 +379,15 @@ body {
         height: 300px;
         width: 100%;
     }
+    .about .about-data .bulet-points{
+        display: flex;
+        margin: 40px 0;
+    }
+    .berif-intro{
+        font-size: 1rem;
+    }
 }
-@media screen and (max-width:450px) {
+@media screen and (max-width:650px) {
     .about .about-data .bulet-points {
         display: block;
         margin: 40px 0;
@@ -453,6 +487,10 @@ body {
 .resume .seprate-section{
     margin: 40px 0;
 }
+.resume .seprate-section a{
+    text-decoration: none;
+    color: #000;
+}
 .resume .seprate-section h2{
     margin: 10px 0;
 }
@@ -465,7 +503,7 @@ body {
     border-radius: 15px;
 }
 .resume .seprate-section p{
-   margin: 10px 0;
+   margin: 15px 0;
    color: var(--text-color-secondry);
 }
 .resume .seprate-section ul{
