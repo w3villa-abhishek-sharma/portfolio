@@ -272,6 +272,10 @@ body {
 .social-links a{
     color: #fff;
 }
+.social-links i:hover{
+    transform: scale(1.2);
+    transition: .5s;
+}
 
 
 /*  
@@ -286,6 +290,7 @@ body {
     flex-direction: column;
     font-size: 2.6rem;
 }
+
 @media screen and (max-width:750px) {
     .main{
         background: linear-gradient(#122743c2,#44444494) ,url('../images/WhatsApp\ Image\ 2023-02-15\ at\ 9.44.28\ AM.jpeg') center top no-repeat fixed ;
@@ -339,6 +344,10 @@ body {
     object-fit: cover;
     object-position: top;
     border-radius: 15px;
+}
+.about .content .about-profile-img img:hover{
+    transform: scale(1.1);
+    transition: .5s;
 }
 .about .header .heading h2{
     margin: 20px 0;
